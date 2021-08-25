@@ -60,6 +60,17 @@
     color: var(--roxoclaro);
 }
 
+/*Estilo do botao do menu*/
+.menu-btn{
+    color: var(--branco);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+    transition: 0.4s all ease;
+}
+.menu-btn:hover{
+    color: var(--roxoclaro);
+}
 
 /*Estilo Home Section*/
 .home{
@@ -71,7 +82,7 @@
     font-family: 'Ubuntu', sans-serif;
 }
 .home .max-width{
-    margin: auto 0 auto 40px;
+    margin: auto 0 auto 10px;
 }
 .home .home-content .text-1{
     font-size: 27px;
@@ -89,3 +100,127 @@
     color: var(--roxoclaro);
     font-weight: 600;
 }
+.home .home-content .text-4{
+    font-size: 20px;
+    margin: 0 0;
+    color: var(--roxoclaro);
+    opacity: 0.8;    
+}
+
+/*Responsividade*/
+
+
+@media (max-width: 991px){
+    .max-width{
+        padding: 0 50px;
+    }
+} 
+
+@media (max-width: 947px){
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 9999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: var(--roxo);
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.5s ease;
+    }
+    .navbar .menu.active{
+        left: 0%;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .home .home-content .text-2{
+        font-size: 70px;      
+    }
+    .home .home-content .text-3{
+        font-size: 35px;
+    }
+    .home .home-content .text-4{
+        font-size: 18px;
+    }
+    .home .home-content .text-4.active{
+        color: var(--roxo);
+    }
+}
+
+@media (max-width: 704px){
+    .max-width{
+        padding-left: 20px;
+        margin-left: 5px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;      
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content .text-4{
+        font-size: 15px;
+    }
+    .home .home-content .text-4.active{
+        color: var(--roxo);
+    }
+}
+
+@media (max-width: 564px){
+    .max-width{
+        padding-left: 20px;
+        margin-left: 5px;
+    }
+    .home .home-content .text-2{
+        font-size: 40px;      
+    }
+    .home .home-content .text-3{
+        font-size: 25px;
+    }
+    .home .home-content .text-4{
+        font-size: 13px;
+    }
+    .home .home-content .text-4.active{
+        color: var(--roxo);
+    } 
+} 
+         
+@media (max-width: 410px){
+    .home .max-width{
+        margin: 200px 30px 0 0;
+    }
+    .home .home-content .text-1{
+        font-size: 20px;      
+    }
+    .home .home-content .text-2{
+        font-size: 30px;      
+    }
+    .home .home-content .text-3{
+        font-size: 20px;
+    }
+    .home .home-content .text-4{
+        font-size: 13px;
+    }
+    .home .home-content .text-4.active{
+        color: var(--roxo);
+    }
+}
+
+
+
