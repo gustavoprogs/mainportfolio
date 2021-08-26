@@ -32,7 +32,7 @@
 }
 .navbar.sticky{
     padding: 15px 0; 
-    background: #111;
+    background: var(--roxo);
 }
 .navbar .max-width{
     display: flex;
@@ -259,7 +259,7 @@ section{
     font-size: 20px;
 }
 .services .serv-content .card:hover{
-    background: var(--roxoclaro);
+    background: var(--roxo);
 }
 .services .serv-content .card .box{
     transition: all 0.4s ease;
@@ -392,6 +392,115 @@ section{
 }
 .skills .skills-content .right .mysql::before{
     width: 70%;
+}
+/* ================================================= PROJETOS ================================================= */
+.projects .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.projects .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 270px;
+    height: 3px;
+    background: var(--branco);
+    transform: translateX(-50%);
+}
+.projects .title::after{
+    content: "ESTUDOS";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--roxoclaro);
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+    background: #111;
+}
+.projects{
+    font-family: 'Poppins', sans-serif;
+    color: var(--branco);
+    background: #111;
+}
+.projects .carousel .card{
+    background: #222;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+.projects .carousel .card:hover{
+    background: var(--roxo);
+}
+.projects .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 50px 0;
+}
+.projects .carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--roxoclaro);
+    transition: all 0.4s ease;
+}
+.projects .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.6s ease;
+}
+.projects .carousel .card .box a{
+    display: inline-block;
+    background: #7649df;
+    color: var(--branco);
+    font-size: 18px;
+    padding: 12px 36px;
+    margin-top: 40px;
+    border-radius: 6px;
+    border: 2px solid var(--roxoclaro);
+    transition: all 0.4s ease;
+}
+.projects .carousel .card .box a:hover{
+    color: var(--branco);
+    background: none;
+}
+.projects .carousel .card:hover img{
+    border-color: var(--branco);
+}
+.projects .carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 18px;
+    width: 18px;
+    margin: 0 10px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid var(--roxoclaro)!important;
+    transition: all 0.4s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;    
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: var(--roxoclaro)!important;
 }
 
 /* ================================================= Responsividade ================================================= */
