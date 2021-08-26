@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:ital,wght@0,500;0,700;1,400&display=swap');
-
+/* ================================================= VARIAVEIS ================================================= */
 :root{
     --roxo: rgb(20, 1, 20);
     --preto: #121214;
     --roxoclaro: #9466FF;
     --branco: #E1E1E6;
 }
-
+/* ================================================= RESET NAVEGADOR ================================================= */
 *{
     margin: 0;
     padding: 0;
@@ -14,19 +14,21 @@
     text-decoration: none;
 }
 
+/* ================================================= BOX ================================================= */
 .max-width{
     max-width: 1800px;
     padding: 0 80px;
     margin: auto 0 auto 40px;
 }
 
-/*Estilo Navbar*/
+/* ================================================= Estilo Navbar ================================================= */
 .navbar{
     position: fixed;
     width: 100%;
     padding: 30px 0;   
     font-family: 'Ubuntu', sans-serif;
     transition: all 0.3s ease;
+    z-index: 999;
 }
 .navbar.sticky{
     padding: 15px 0; 
@@ -60,7 +62,7 @@
     color: var(--roxoclaro);
 }
 
-/*Estilo do botao do menu*/
+/* ================================================= Estilo do botao do menu ================================================= */
 .menu-btn{
     color: var(--branco);
     font-size: 23px;
@@ -72,7 +74,7 @@
     color: var(--roxoclaro);
 }
 
-/*Estilo Home Section*/
+/* ================================================= Estilo Home Section ================================================= */
 .home{
     display: flex;
     background: url("img/dev2.jpg") no-repeat left;
@@ -122,8 +124,113 @@
     background: none;
 }
 
+/* ================================================= Estilo da sessão sobre ================================================= */
+section{
+    padding: 100px 0;
+}
+.about{
+    font-family: 'Poppins',sans-serif;
+}
+.about .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.about .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 195px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.about .title::after{
+    content: "quem sou";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--roxoclaro);
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 500px;
+    width: 500px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.about .about-content .right .text span{
+    color: var(--roxoclaro);
+}
+.about .about-content .right p{
+    text-align: justify;
+}
+.about .about-content .right a{
+    display: inline-block;
+    background: #7649df;
+    color: var(--branco);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid var(--roxoclaro);
+    transition: all 0.5s ease;
+}
+.about .about-content .right a:hover{
+    color: var(--roxoclaro);
+    background: none;
+}
 
-/*Responsividade*/
+/* ================================================= Responsividade ================================================= */
+@media (max-width: 1300px){
+    .max-width{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 1360px){
+    .about .about-content .left img{
+        height: 350px;
+        width: 350px;       
+    }
+}
+
+@media (max-width: 850px){
+    .about .about-content .left img{
+        height: 290px;
+        width: 290px;       
+    }
+    .about .about-content .right .text{
+        font-size: 18px;
+    }    
+}
+
 @media (max-width: 991px){
     .max-width{
         padding: 0 50px;
@@ -175,6 +282,24 @@
     .home .home-content .text-4.active{
         color: var(--roxo);
     }
+    .max-width{
+        max-width: 800px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .about .about-content .right .text{
+        font-size: 25px;
+    }
+    
 }
 
 @media (max-width: 704px){
@@ -198,6 +323,7 @@
         font-size: 23px;
         padding: 10px 30px;
     }
+ 
 }
 
 @media (max-width: 564px){
