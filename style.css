@@ -32,7 +32,7 @@
 }
 .navbar.sticky{
     padding: 15px 0; 
-    background: var(--roxo);
+    background: #111;
 }
 .navbar .max-width{
     display: flex;
@@ -128,7 +128,7 @@
 section{
     padding: 100px 0;
 }
-.about{
+.about, .services, .skills{
     font-family: 'Poppins',sans-serif;
 }
 .about .title{
@@ -151,9 +151,9 @@ section{
     transform: translateX(-50%);
 }
 .about .title::after{
-    content: "quem sou";
+    content: "SOBRE";
     position: absolute;
-    bottom: -10px;
+    bottom: -15px;
     left: 50%;
     font-size: 20px;
     color: var(--roxoclaro);
@@ -161,7 +161,39 @@ section{
     background: #fff;
     transform: translateX(-50%);
 }
-.about .about-content{
+.services .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.services .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 270px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.services .title::after{
+    content: "REALIZADOS";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--roxoclaro);
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+    background: #111;
+}
+.about .about-content,
+.services .serv-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -205,6 +237,49 @@ section{
 .about .about-content .right a:hover{
     color: var(--roxoclaro);
     background: none;
+}
+/* ================================================= PROJETOS ================================================= */
+.services{
+    color: var(--branco);
+    background: #111;
+}
+.services .title::before{
+    background-color: var(--branco);
+}
+.services .serv-content .card{
+    width: calc(33% - 20px);
+    text-align: center;
+    background: #222;   
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.services .serv-content .card p{
+    font-size: 20px;
+}
+.services .serv-content .card:hover{
+    background: var(--roxoclaro);
+}
+.services .serv-content .card .box{
+    transition: all 0.4s ease;
+}
+.services .serv-content .card:hover .box{
+    transform: scale(1.05);
+}
+.services .serv-content .card i{
+    font-size: 50px;
+    color: var(--roxoclaro);
+    transition: all 0.4s ease;
+}
+.services .serv-content .card:hover i{
+    color: var(--branco);
+}
+
+.services .serv-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
 }
 
 /* ================================================= Responsividade ================================================= */
@@ -280,7 +355,7 @@ section{
         font-size: 18px;
     }
     .home .home-content .text-4.active{
-        color: var(--roxo);
+        color: crimson;
     }
     .max-width{
         max-width: 800px;
@@ -299,7 +374,10 @@ section{
     .about .about-content .right .text{
         font-size: 25px;
     }
-    
+    .services .serv-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 704px){
@@ -317,11 +395,15 @@ section{
         font-size: 15px;
     }
     .home .home-content .text-4.active{
-        color: var(--roxo);
+        color: crimson;
     }
     .home .home-content a{
         font-size: 23px;
         padding: 10px 30px;
+    }
+    .services .serv-content .card{
+        width: 100%
+        
     }
  
 }
@@ -341,7 +423,7 @@ section{
         font-size: 13px;
     }
     .home .home-content .text-4.active{
-        color: var(--roxo);
+        color: crimson;
     } 
     .home .home-content a{
         font-size: 20px;
@@ -357,7 +439,7 @@ section{
         font-size: 20px;      
     }
     .home .home-content .text-2{
-        font-size: 30px;      
+        font-size: 50px;      
     }
     .home .home-content .text-3{
         font-size: 20px;
@@ -366,7 +448,7 @@ section{
         font-size: 13px;
     }
     .home .home-content .text-4.active{
-        color: var(--roxo);
+        color: crimson;
     }
     .home .home-content a{
         font-size: 15px;
