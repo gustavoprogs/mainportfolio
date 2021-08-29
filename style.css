@@ -123,12 +123,7 @@ html{
     color: var(--roxoclaro);
     font-size: 70%;
 }
-.home .mobile img{
-    opacity: 0;
-}
-.home .home-content{
-    margin-top: 30%;
-}
+
 .home .max-width{
     margin: auto 0 auto 10px;
 }
@@ -668,13 +663,7 @@ footer span a:hover{
     .about .about-content .right .text{
         font-size: 18px;
     }   
-    /* =
-    .home .mobile img{
-        opacity: 1;
-        height: 280px;
-        margin-top: 120px;
-    } 
-    */
+   
 }
 
 @media (max-width: 984px){
