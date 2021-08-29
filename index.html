@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/26d4a64054.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
@@ -15,18 +16,22 @@
 </head>
 <body>
 
+    <div class="scroll-up-btn">
+        <i class="fas fa-angle-up"></i>
+    </div>
+
    <!--------------------------------------------- NAVBAR ---------------------------------------------->
 
     <nav class="navbar">
         <div class="max-width">
             <div class="logo"><a href="#">Portfo<span>lio.</span></a></div>
             <ul class="menu">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Biografia</a></li>
-                <li><a href="#">Cursos</a></li>
-                <li><a href="#">Conhecimentos</a></li>
-                <li><a href="#">Projetos</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#home" class="menu-btn">Inicio</a></li>
+                <li><a href="#about" class="menu-btn">Biografia</a></li>
+                <li><a href="#projects" class="menu-btn">Projetos</a></li>              
+                <li><a href="#skills" class="menu-btn">Conhecimentos</a></li>                
+                <li><a href="#services" class="menu-btn">Cursos</a></li>
+                <li><a href="#contact" class="menu-btn">Contato</a></li>
             </ul>
             <div class="menu-btn">
                 <i class="fas fa-bars"></i>
@@ -43,7 +48,7 @@
                 <div class="text-1">Olá, meu nome é</div>
                 <div class="text-2">Gustavo Eduardo</div>
                 <div class="text-4">____________________________</div>
-                <div class="text-3">Desenvolvedor <span>Front-end;</span></div>
+                <div class="text-3">Desenvolvedor > <span class="typing"></span></div>
                 <a href="https://www.linkedin.com/in/gustavo-eduardo-525052209/" target="_blank">Contato</a>
             </div>
         </div>
@@ -59,7 +64,7 @@
                     <img src="img/perfil.jpg" alt="Foto Perfil">
                 </div>
                 <div class="column right">
-                    <div class="text">Me chamo Gustavo e sou desenvolvedor <span>Front-end</span>!</div>
+                    <div class="text">Me chamo Gustavo e sou desenvolvedor <span class="typing-2"></span></div>
                     <p>Me formei no curso de Ciência da Computação em 2019, e desde então continuei meus estudos
                         de forma destinada ao conhecimento de tecnologias e boas práticas para o desenvolvimento Web,
                         utilizo JavaScript com HTML5 e CSS3 em grande parte dos meus projetos, estou em busca de uma oportunidade
@@ -73,92 +78,6 @@
 
     <!--------------------------------------------- PROJETOS ---------------------------------------------->
     
-    <section class="services" id="services">
-        <div class="max-width">
-            <h2 class="title">Meus cursos</h2>
-            <div class="serv-content">
-
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Ciência da Computação</div>
-                        <p>aaaaaaaaaaaaa.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Bootcamp Web Developer</div>
-                        <p>aaaaaaaaaaaaaaaa.</p>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <div class="box">
-                        <i class="fas fa-code"></i>
-                        <div class="text">Desenvolvimento Web</div>
-                        <p>aaaaaaaaaaaaa.</p>
-                    </div>
-                </div>  
-
-            </div>
-        </div>
-    </section>
-
-    <!--------------------------------------------- HABILIDADES ---------------------------------------------->
-
-    <section class="skills" id="skills">
-        <div class="max-width">
-            <h2 class="title">Conhecimentos</h2>
-            <div class="skills-content">
-                <div class="column left">
-                    <div class="text">Minhas habilidades <span>&</span> experiências</div>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quam commodi veniam quaerat velit fugiat earum corporis, itaque accusamus culpa ab perspiciatis omnis. Magni, minus. Ducimus, temporibus id ad quisquam, labore, quis nostrum adipisci dicta nam laboriosam iste explicabo voluptate eius laborum quae dolores similique rem vitae excepturi numquam totam perspiciatis voluptas aut? Nihil libero possimus deleniti unde, doloribus non!</p>
-                    <a href="#">Leia mais</a>
-                </div>
-                <div class="column right">
-                    <div class="bars">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>90%</span>
-                        </div>
-                        <div class="line html"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line css"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>40%</span>
-                        </div>
-                        <div class="line js"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>PHP</span>
-                            <span>30%</span>
-                        </div>
-                        <div class="line php"></div>
-                    </div>
-                    <div class="bars">
-                        <div class="info">
-                            <span>MySQL</span>
-                            <span>70%</span>
-                        </div>
-                        <div class="line mysql"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--------------------------------------------- PROJETOS ---------------------------------------------->
     <section class="projects" id="projects">
         <div class="max-width">
             <h2 class="title">Meus projetos</h2>
@@ -230,6 +149,94 @@
             </div>
         </div>
     </section>
+    
+    <!--------------------------------------------- HABILIDADES ---------------------------------------------->
+
+    <section class="skills" id="skills">
+        <div class="max-width">
+            <h2 class="title">Conhecimentos</h2>
+            <div class="skills-content">
+                <div class="column left">
+                    <div class="text">Minhas habilidades <span>&</span> experiências</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quam commodi veniam quaerat velit fugiat earum corporis, itaque accusamus culpa ab perspiciatis omnis. Magni, minus. Ducimus, temporibus id ad quisquam, labore, quis nostrum adipisci dicta nam laboriosam iste explicabo voluptate eius laborum quae dolores similique rem vitae excepturi numquam totam perspiciatis voluptas aut? Nihil libero possimus deleniti unde, doloribus non!</p>
+                    <a href="#">Leia mais</a>
+                </div>
+                <div class="column right">
+                    <div class="bars">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>40%</span>
+                        </div>
+                        <div class="line js"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>PHP</span>
+                            <span>30%</span>
+                        </div>
+                        <div class="line php"></div>
+                    </div>
+                    <div class="bars">
+                        <div class="info">
+                            <span>MySQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line mysql"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------------------------- PROJETOS ---------------------------------------------->
+    
+    <section class="services" id="services">
+        <div class="max-width">
+            <h2 class="title">Meus cursos</h2>
+            <div class="serv-content">
+
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Ciência da Computação</div>
+                        <p>aaaaaaaaaaaaa.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Bootcamp Web Developer</div>
+                        <p>aaaaaaaaaaaaaaaa.</p>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="box">
+                        <i class="fas fa-code"></i>
+                        <div class="text">Desenvolvimento Web</div>
+                        <p>aaaaaaaaaaaaa.</p>
+                    </div>
+                </div>  
+
+            </div>
+        </div>
+    </section>
+
 
     <!--------------------------------------------- CONTATO ---------------------------------------------->
 
@@ -280,12 +287,15 @@
                     </div> 
                     
                     <div class="column right">
-                        <img src="img/gif.gif" alt="Contato gif">
-                        
+                        <img src="img/gif.gif" alt="Contato gif">                       
                     </div>
                 </div>           
         </div>
     </section>
+
+    <footer>
+        <span>Criado por <a href="#">Gustavo Eduardo</a> | <span class="far fa-copyright"></span> 2021 TODOS direitos reservados!</span>
+    </footer>
 
     <script src="script.js"></script>
 </body>
