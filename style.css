@@ -119,6 +119,16 @@ html{
     min-height: 500px;
     font-family: 'Ubuntu', sans-serif;
 }
+.home .home-content i{
+    color: var(--roxoclaro);
+    font-size: 70%;
+}
+.home .mobile img{
+    opacity: 0;
+}
+.home .home-content{
+    margin-top: 30%;
+}
 .home .max-width{
     margin: auto 0 auto 10px;
 }
@@ -290,6 +300,7 @@ section{
     padding: 20px 25px;
     cursor: pointer;
     transition: all 0.4s ease;
+    margin-bottom: 40px;
 }
 .services .serv-content .card p{
     font-size: 20px;
@@ -656,7 +667,14 @@ footer span a:hover{
     }
     .about .about-content .right .text{
         font-size: 18px;
-    }    
+    }   
+    /* =
+    .home .mobile img{
+        opacity: 1;
+        height: 280px;
+        margin-top: 120px;
+    } 
+    */
 }
 
 @media (max-width: 984px){
@@ -754,10 +772,10 @@ footer span a:hover{
         margin-left: 5px;
     }
     .home .home-content .text-2{
-        font-size: 60px;      
+        font-size: 30px;      
     }
     .home .home-content .text-3{
-        font-size: 32px;
+        font-size: 22px;
     }
     .home .home-content .text-4{
         font-size: 15px;
@@ -767,7 +785,7 @@ footer span a:hover{
     }
     .home .home-content a{
         font-size: 23px;
-        padding: 10px 30px;
+        padding: 20px 30px;
     }
     .services .serv-content .card{
         width: 100%      
@@ -781,10 +799,10 @@ footer span a:hover{
         margin-left: 5px;
     }
     .home .home-content .text-2{
-        font-size: 40px;      
+        font-size: 30px;      
     }
     .home .home-content .text-3{
-        font-size: 25px;
+        font-size: 20px;
     }
     .home .home-content .text-4{
         font-size: 13px;
@@ -806,7 +824,7 @@ footer span a:hover{
         font-size: 20px;      
     }
     .home .home-content .text-2{
-        font-size: 50px;      
+        font-size: 28px;      
     }
     .home .home-content .text-3{
         font-size: 20px;
