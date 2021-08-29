@@ -503,6 +503,87 @@ section{
     background: var(--roxoclaro)!important;
 }
 
+/* ================================================= CONTATO ================================================= */
+.contact .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 220px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+.contact .title::after{
+    content: "FALE COMIGO";
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    font-size: 18px;
+    color: var(--roxoclaro);
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+    background: var(--branco);
+}
+.contact{
+    font-family: 'Poppins', sans-serif;
+    color: #111;
+    background: var(--branco);
+}
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact .contact-content .left p{
+    text-align: justify;
+}
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+
+}
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: var(--roxoclaro);
+}
+.contact .contact-content .info .head{
+    font-weight: 500;
+}
+.contact .contact-content .info .sub-title{
+    color: #333;
+}
+.contact .column.right img{
+    border-radius: 32px;
+    width: 80%;
+}
+
 /* ================================================= Responsividade ================================================= */
 @media (max-width: 1300px){
     .max-width{
@@ -525,6 +606,17 @@ section{
     .about .about-content .right .text{
         font-size: 18px;
     }    
+}
+
+@media (max-width: 984px){
+    .contact .column.left{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .contact .column.right img{        
+        height: 300px;
+        width: 300px;
+    }
 }
 
 @media (max-width: 991px){
