@@ -4,5 +4,5 @@
 
 * HMTL5, CSS3, JavaScript.
 * Link:  https://gustavoprogs.github.io/mainportfolio/
-* ![inicio](C:\Users\Gustavo\Documents\Apowersoft\Apowersoft Online Screen Recorder\inicio.gif)
+* ![Imagem Inicio](img/readme/inicio.gif)
 
