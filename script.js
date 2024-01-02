@@ -19,14 +19,14 @@ $(document).ready(function(){
 
     // Textos com animação
     var typed = new Typed(".typing", {
-        strings: ["Criativo;", "Inovador;", "Proativo;", "Determinado!"],
+        strings: ["Criativo;", "Inovador;", "Proativo;", "Dedicado!"],
         typeSpeed: 100,
         backSpeed: 60,
         loop:true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["Criativo;", "Inovador;", "Proativo;", "Determinado!"],
+        strings: ["Criativo;", "Inovador;", "Proativo;", "Dedicado!"],
         typeSpeed: 100,
         backSpeed: 60,
         loop:true
